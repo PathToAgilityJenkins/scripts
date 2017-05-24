@@ -2,7 +2,7 @@ def call(String project)
 {
 	node
 	{
-		echo 'Running common pipeline for ${project}.'
+		echo "Running common pipeline for ${project}."
 		
 		stage('Checkout')
 		{
@@ -22,12 +22,12 @@ def call(String project)
 		
 		stage('Deploy')
 		{
-			echo 'Do something useful to deploy ${project}.'
+			echo "Do something useful to deploy ${project}."
 		}
 		
 		stage('Test')
 		{
-			echo 'Do something useful to test ${project}.'
+			echo "Do something useful to test ${project}."
 		}
 	}
 }
